@@ -5,14 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
     <title>Weather Information</title>
 </head>
 <body>
     
-    <input type="text" id="name">
-    <button onclick="request()"></button>
+    <div class="container">
 
-    <p id="temperature"></p>
+        <div class="search">
+
+            <input type="text">
+            <button class="search-button"><i class="uil uil-search-alt icon-button"></i></button>
+
+        </div>
+
+        <div class="weather-information">
+
+            <h3 id="temperature"></h3>
+
+            <div class="temperatures">
+                <p id="temp_max"></p>
+                <p id="temp_min"></p>
+            </div>
+
+            <div class="additional-information">
+
+                <div class="humidity-field">
+                    <i class="uil uil-raindrops-alt"></i>
+                    <p id="humidity"></p>
+                </div>
+
+                <div class="cloud-field">
+                    <i class="uil uil-cloud"></i>
+                    <p id="clouds"></p>
+                </div>
+
+                <div class="wind-field">
+                    <i class="uil uil-wind"></i>
+                    <p id="wind_speed"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

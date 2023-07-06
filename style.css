@@ -76,6 +76,7 @@ body {
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 15px;
     margin-top: 40px;
 }
@@ -168,4 +169,90 @@ body {
 
 #humidity, #clouds, #wind_speed {
     font-size: 15px;
+}
+
+@media (max-width: 428px) {
+    .container {
+        padding: 20px;
+    }
+    .additional-information {
+        padding: 10px 0;
+    }
+    .icon {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 402px) {
+    .container {
+        padding: 20px;
+    }
+    .search {
+        gap: 10px;
+    }
+    .input {
+        width: 200px;
+    }
+    .city #name {
+        font-size: 16px;
+        max-width: 100px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 357px) {
+    .site-title h3 {
+        font-size: 16px;
+    }
+    .input {
+        font-size: 14px;
+        width: 180px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+    #humidity, #clouds, #wind_speed {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 317px) {
+    .site-title h3 {
+        font-size: 14px;
+    }
+    .site-title h5 {
+        font-size: 12px;
+    }
+    .input {
+        font-size: 13px;
+        width: 150px;
+    }
+    .icon {
+        font-size: 18px;
+    }
+    #humidity, #clouds, #wind_speed {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 281px) {
+    .site-title h3 {
+        font-size: 12px;
+    }
+    .site-title h5 {
+        font-size: 10px;
+    }
+    .input {
+        font-size: 11px;
+        width: 130px;
+    }
+    .city #name {
+        font-size: 14px;
+    }  
+    .icon {
+        font-size: 15px;
+    }
+    #humidity, #clouds, #wind_speed {
+        font-size: 10px;
+    }
 }

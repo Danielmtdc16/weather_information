@@ -86,7 +86,7 @@ body {
 }
 
 .city #name {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .weather-information {
@@ -184,6 +184,9 @@ body {
 }
 
 @media (max-width: 402px) {
+    .site-title h3 {
+        font-size: 16px;
+    }
     .container {
         padding: 20px;
     }
@@ -191,12 +194,22 @@ body {
         gap: 10px;
     }
     .input {
+        font-size: 13px;
         width: 200px;
     }
     .city #name {
-        font-size: 16px;
-        max-width: 100px;
+        font-size: 15px;
+        max-width: 180px;
         text-align: center;
+    }
+    .city .location {
+        font-size: 23px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+    #humidity, #clouds, #wind_speed {
+        font-size: 13px;
     }
 }
 
@@ -207,6 +220,10 @@ body {
     .input {
         font-size: 14px;
         width: 180px;
+    }
+    .city #name {
+        font-size: 13px;
+        max-width: 147px;
     }
     .icon {
         font-size: 20px;
@@ -247,8 +264,12 @@ body {
         width: 130px;
     }
     .city #name {
-        font-size: 14px;
+        font-size: 11px;
+        max-width: 124px;
     }  
+    .city .location {
+        font-size: 20px;
+    }
     .icon {
         font-size: 15px;
     }

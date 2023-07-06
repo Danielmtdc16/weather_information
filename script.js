@@ -33,3 +33,4 @@ let weather = {
     }
 }
 
+weather.request("brasilia");

@@ -46,9 +46,10 @@ body {
 }
 
 .input {
-    background: #dad8d8;
+    background: #1146a3;
     border: none;
     border-radius: 10px;
+    color: rgb(202, 201, 201);
     font-size: 15px;
     padding: 10px;
     width: 250px;
@@ -67,9 +68,8 @@ body {
 .icon-button {
     font-size: 20px;
 }
-.search-button:hover, .icon-button:hover {
-    background-color: #757575;
-    color: white;
+.search-button:hover {
+    background-color: #9e9d9d;
 }
 
 .weather-information {
@@ -98,8 +98,38 @@ body {
     display: flex;
     font-size: 13px;
     gap: 20px;
+    margin-bottom: 25px;
+}
+
+.additional-information {
+    background: #0D3A8A;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
 }
 
 .icon {
     color: white;
+    font-size: 24px;
+}
+
+.humidity-field, .cloud-field, .wind-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.humidity-field {
+    margin-left: 10px;
+}
+
+.wind-field {
+    margin-right: 10px;
+}
+
+#humidity, #clouds, #wind_speed {
+    font-size: 15px;
 }

@@ -11,6 +11,11 @@
 </head>
 <body>
     
+    <div class="site-title">
+        <h3>Bem vindo ao <span>Weather Information</span></h3>
+        <h5>Seu site de informações do clima</h5>
+    </div>
+
     <div class="container">
 
         <div class="search">
@@ -22,27 +27,31 @@
 
         <div class="weather-information">
 
-            <h3 id="temperature"></h3>
+            <img src="" alt="" class="cloud-image">
+
+            <h3 id="temperature">28<sup>o</sup></h3>
+
+            <p class="precipitations">Precipitações</p>
 
             <div class="temperatures">
-                <p id="temp_max"></p>
-                <p id="temp_min"></p>
+                <p class="temp_max">Máx: <span id="temp_max">31<sup>o</sup></span></p>
+                <p class="temp_min">Min: <span id="temp_min">21<sup>o</sup></span></p>
             </div>
 
             <div class="additional-information">
 
                 <div class="humidity-field">
-                    <i class="uil uil-raindrops-alt"></i>
+                    <i class="uil uil-raindrops-alt icon"></i>
                     <p id="humidity"></p>
                 </div>
 
                 <div class="cloud-field">
-                    <i class="uil uil-cloud"></i>
+                    <i class="uil uil-cloud icon"></i>
                     <p id="clouds"></p>
                 </div>
 
                 <div class="wind-field">
-                    <i class="uil uil-wind"></i>
+                    <i class="uil uil-wind icon"></i>
                     <p id="wind_speed"></p>
                 </div>
             </div>

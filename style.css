@@ -72,11 +72,46 @@ body {
     background-color: #9e9d9d;
 }
 
+.city {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.city .location {
+    font-size: 25px;
+}
+
+.city #name {
+    font-size: 20px;
+}
+
 .weather-information {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+}
+
+.weather-information.loading {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    position: relative;
+}
+
+.weather-information.loading:after {
+    content: "Carregando...";
+    color: white;
+    position: absolute;
+    visibility: visible;
+}
+
+.cloud-image {
+    margin-top: 20px;
+    object-fit: cover;
+    width: 80px;
 }
 
 #temperature {
@@ -107,6 +142,7 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
     padding: 10px;
     width: 100%;
 }

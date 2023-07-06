@@ -270,6 +270,9 @@ body {
     .city .location {
         font-size: 20px;
     }
+    #temperature {
+        font-size: 40px;
+    }
     .icon {
         font-size: 15px;
     }
